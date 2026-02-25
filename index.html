@@ -3,74 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de Velas y Jabones Artesanales | Oferta 3x1</title>
+    <title>Curso de Velas y Jabones Artesanales | Oferta Especial 3x1</title>
     <style>
         :root {
             --primary: #c76b29;
             --secondary: #a5551f;
+            --success: #28a745;
             --bg: #fff8f3;
             --text: #333;
         }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:0; background: var(--bg); color: var(--text); line-height:1.6; }
         .container { max-width: 800px; margin:auto; padding:20px; }
+        
         header { text-align:center; padding:40px 0 20px; }
-        .badge { background: #d9534f; color:white; display:inline-block; padding:5px 15px; border-radius:50px; font-weight:bold; font-size:14px; margin-bottom:15px; text-transform: uppercase; }
-        h1 { color: var(--primary); font-size:2.2rem; margin-bottom: 20px; line-height: 1.2; }
+        .badge { background: #d9534f; color:white; display:inline-block; padding:5px 15px; border-radius:50px; font-weight:bold; font-size:14px; margin-bottom:15px; text-transform: uppercase; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+        
+        h1 { color: var(--primary); font-size: 2.2rem; margin-bottom: 20px; line-height: 1.2; }
         
         .product-img { width: 100%; max-width: 500px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin: 20px 0; }
         
-        .highlight-box { background: white; padding:25px; border-left: 5px solid var(--primary); border-radius:8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin:30px 0; }
-        
-        .cta-button { 
-            display:block; background: #28a745; color:white; padding:22px; text-decoration:none; 
-            font-size:22px; font-weight: bold; border-radius:10px; text-align:center;
-            transition:0.3s; box-shadow: 0 5px 20px rgba(40, 167, 69, 0.4); margin: 30px 0;
+        /* Caja de Precio */
+        .price-box { 
+            background: white; border: 2px dashed var(--primary); padding: 30px; border-radius: 15px; text-align: center; margin: 30px 0; 
         }
-        .cta-button:hover { transform: scale(1.02); background: #218838; }
+        .old-price { text-decoration: line-through; color: #999; font-size: 1.2rem; }
+        .new-price { color: var(--success); font-size: 3rem; font-weight: bold; margin: 10px 0; }
 
-        footer { margin-top:60px; font-size:12px; color:#999; text-align:center; border-top: 1px solid #eee; padding-top: 20px; }
+        .cta-button { 
+            display:block; background: var(--success); color:white; padding:22px; text-decoration:none; 
+            font-size:22px; font-weight: bold; border-radius:10px; text-align:center;
+            transition:0.3s; box-shadow: 0 5px 20px rgba(40, 167, 69, 0.4); margin: 20px 0;
+        }
+        .cta-button:hover { transform: scale(1.03); background: #218838; }
+
+        .highlight-box { background: white; padding:25px; border-left: 5px solid var(--primary); border-radius:8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin:30px 0; }
         
         ul { list-style: none; padding: 0; }
         ul li::before { content: "✨"; margin-right: 10px; }
-        ul li { margin-bottom: 10px; font-weight: 500; }
+        ul li { margin-bottom: 12px; font-weight: 500; }
+
+        footer { margin-top:60px; font-size:12px; color:#999; text-align:center; border-top: 1px solid #eee; padding-top: 20px; }
+        .klarna-info { font-size: 0.9rem; color: #666; margin-top: 10px; display: block; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <header>
-        <div class="badge">🔥 ¡PROMOCIÓN POR TIEMPO LIMITADO!</div>
-        <h1>Aprende el Arte de las Velas y Jabones Artesanales: Tu Próximo Negocio en Casa</h1>
-        <p style="font-size: 1.2rem;">Accede hoy mismo al combo <strong>OFERTA 3X1</strong> y comienza a crear.</p>
+        <div class="badge">🔥 ¡OFERTA 3X1 POR TIEMPO LIMITADO!</div>
+        <h1>Aprende a Crear Velas y Jabones Artesanales: Tu Próximo Negocio en Casa</h1>
+        <p style="font-size: 1.2rem;">Únete a miles de emprendedoras y domina las técnicas más rentables del mercado.</p>
         
-        <img src="https://hotmart.s3.amazonaws.com/product_contents/883556d1-4176-4702-8928-11f46820c784/Disenosintitulo20.png" alt="Curso Velas y Jabones" class="product-img">
-
-        <a href="https://go.hotmart.com/U104576302Y?ap=e5ca" rel="nofollow sponsored" target="_blank" class="cta-button">
-            ¡SÍ, QUIERO EL PACK 3X1 AHORA!
-        </a>
+        <img src="https://hotmart.s3.amazonaws.com/product_contents/883556d1-4176-4702-8928-11f46820c784/Disenosintitulo20.png" alt="Combo Velas y Jabones" class="product-img">
     </header>
 
     <div class="highlight-box">
-        <h3>Todo lo que incluye el programa:</h3>
+        <h3>¿Qué aprenderás hoy?</h3>
         <ul>
-            <li><strong>Manual de Velas:</strong> Técnicas de vertido, aromas y decoración.</li>
-            <li><strong>Jabonería Profesional:</strong> Desde el proceso en frío hasta bases de glicerina.</li>
-            <li><strong>Guía de Negocio:</strong> Cómo poner precios y conseguir tus primeros clientes.</li>
-            <li><strong>Acceso de por vida:</strong> Estudia a tu propio ritmo, sin presiones.</li>
+            <li><strong>Módulo Velas:</strong> Aromáticas, decorativas y técnicas de vertido profesional.</li>
+            <li><strong>Módulo Jabones:</strong> Proceso artesanal con ingredientes naturales y terapéuticos.</li>
+            <li><strong>Módulo de Negocio:</strong> Cómo calcular costos, poner precios y vender por redes sociales.</li>
+            <li><strong>Acceso de por vida:</strong> Estudia desde tu celular o computadora, a tu propio ritmo.</li>
         </ul>
     </div>
 
-    <div style="text-align: center; padding: 20px; background: #ffe6d5; border-radius: 10px;">
-        <p>⚠️ <strong>Atención:</strong> Esta oferta es exclusiva para nuevos estudiantes y puede finalizar en cualquier momento debido a la alta demanda.</p>
+    <div class="price-box">
+        <span class="old-price">Precio Regular: $70.00 USD</span>
+        <div class="new-price">$37.50 USD</div>
+        <p><strong>Pago único - Acceso inmediato</strong></p>
+        
+        <a href="https://go.hotmart.com/U104576302Y?ap=e9cb&src=github-btn-superior" rel="nofollow sponsored" target="_blank" class="cta-button">
+            ¡SÍ, QUIERO LA OFERTA 3X1!
+        </a>
+        <span class="klarna-info">💳 Disponible pago en cuotas con <strong>Klarna</strong> para USA y España.</span>
     </div>
 
-    <a href="https://go.hotmart.com/U104576302Y?ap=e5ca" rel="nofollow sponsored" target="_blank" class="cta-button">
-        VER DISPONIBILIDAD Y TEMARIO
-    </a>
+    <div style="text-align: center; margin: 40px 0;">
+        <h2>¿Por qué este programa es diferente?</h2>
+        <p>A diferencia de videos sueltos en internet, aquí tienes una <strong>metodología probada</strong> para que tus productos no solo se vean bien, sino que sean seguros y de alta calidad para la venta. Además, te llevas 3 cursos por el precio de 1.</p>
+    </div>
+
+    <div style="text-align: center; padding: 30px; background: #fff; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+        <h3>¿Deseas una oferta de último minuto?</h3>
+        <p>Aprovecha nuestro cupón de descuento activo para inscripción inmediata:</p>
+        <a href="https://go.hotmart.com/U104576302Y?ap=e5ca&src=github-btn-inferior" rel="nofollow sponsored" target="_blank" style="color: var(--primary); font-weight: bold; font-size: 1.3rem;">
+            ACCEDER POR SOLO $35.00 USD AQUÍ →
+        </a>
+    </div>
 
     <footer>
-        <p>Este sitio no forma parte de Google ni de Facebook Inc. Los resultados varían según el compromiso del estudiante.</p>
-        <p><a href="privacy.html">Política de Privacidad</a></p>
+        <p>Este sitio no forma parte de Google ni de Facebook Inc. Los resultados pueden variar según el compromiso del estudiante.</p>
+        <p>
+            <a href="privacy.html" style="color: #999;">Política de Privacidad</a>
+        </p>
     </footer>
 </div>
 
